@@ -27,14 +27,6 @@ namespace Pantry.Controllers
                           Problem("Entity set 'ApplicationDbContext.Item'  is null.");
         }
 
-        // GET: Item/ShowSearchForm
-        public async Task<IActionResult> ShowSearchForm()
-        {
-            return _context.Item != null ?
-                        View() :
-                        Problem("Entity set 'ApplicationDbContext.Item'  is null.");
-        }
-
         // GET: Item/Details/5
         public async Task<IActionResult> Details(int? id)
         {
